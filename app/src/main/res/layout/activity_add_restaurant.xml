@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRestaurant">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:src="@drawable/newresview" />
+
+            <ImageView
+                android:id="@+id/AddResLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="230dp"
+                android:src="@drawable/insertresimage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:textStyle="bold"
+                android:layout_marginStart="170dp"
+                android:text="@string/insert_resturant_logo"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="310dp"
+                android:layout_marginStart="30dp"
+                android:inputType="text"
+                android:padding="15dp"
+                android:background="@drawable/box"
+                android:layout_marginEnd="30dp"
+                android:textColor="#7A7979"
+                android:textStyle="bold"
+                android:text="Restaurant name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="370dp"
+                android:layout_marginStart="30dp"
+                android:padding="15dp"
+                android:background="@drawable/box"
+                android:layout_marginEnd="30dp"
+                android:textColor="#7A7979"
+                android:textStyle="bold"
+                android:text="Restaurant Address Link"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="430dp"
+                android:layout_marginStart="30dp"
+                android:padding="15dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="#7A7979"
+                android:textStyle="bold"
+                android:text="Restaurant Parking Availability"/>
+
+            <!-- Horizontal LinearLayout with RadioButtons and Images -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="490dp"
+                android:layout_marginStart="30dp"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="30dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bike" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fourwheel" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="580dp"
+                android:layout_marginStart="30dp"
+                android:padding="15dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="#7A7979"
+                android:textStyle="bold"
+                android:text="Restaurant Wifi Availability"/>
+
+            <!-- Horizontal LinearLayout with Yes/No RadioButtons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="650dp"
+                android:layout_marginStart="30dp"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="30dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Yes" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="No" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Dropdown for Restaurant Cuisine -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="720dp"
+                android:layout_marginStart="30dp"
+                android:padding="15dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="#7A7979"
+                android:textStyle="bold"
+                android:text="Restaurant Cuisine"/>
+
+            <Spinner
+                android:id="@+id/cuisine_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="770dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/box"
+                android:padding="15dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

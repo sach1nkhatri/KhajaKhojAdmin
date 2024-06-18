@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/dash"
+    tools:context=".Dashboard">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="212dp"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="820dp"
+        android:text="@string/welcome_admin"
+        android:textAlignment="center"
+        android:textColor="#FF6060"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_anchorGravity="center" />
+
+    <Button
+        android:id="@+id/AddRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/DeleteRestro"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="248dp"
+        android:backgroundTint="#FF6060"
+        android:padding="18dp"
+        android:text="Add New Restaurant"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/AddCoupons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/DeleteRestro"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#FF6060"
+        android:padding="18dp"
+        android:text="Add Coupons"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/DeleteRestro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="469dp"
+        android:backgroundTint="#FF6060"
+        android:padding="18dp"
+        android:text="Delete Resturant"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/wworkout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="378dp"
+        android:backgroundTint="#FF6060"
+        android:padding="18dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/CreateAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/DeleteRestro"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="167dp"
+        android:backgroundTint="#FF6060"
+        android:padding="18dp"
+        android:text="Create Advertisment"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
