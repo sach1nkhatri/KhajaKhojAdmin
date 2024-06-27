@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="RedKK">#FF6060</color>
+    <color name="RedKK2">#EC9696</color>
+    <color name="cream">#F3EED9</color>
 </resources>

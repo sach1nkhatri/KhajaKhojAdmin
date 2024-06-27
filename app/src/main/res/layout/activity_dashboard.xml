@@ -13,7 +13,7 @@
         android:id="@+id/textView"
         android:layout_width="212dp"
         android:layout_height="71dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="35dp"
         android:layout_marginBottom="39dp"
         android:text="@string/welcome_admin"
         android:textAlignment="center"
@@ -66,7 +66,7 @@
         android:layout_marginTop="23dp"
         android:backgroundTint="#FF6060"
         android:padding="18dp"
-        android:text="Delete Resturant"
+        android:text="Edit Resturant"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:layout_margin="30dp"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/CreateAd" />
 
     <Button
-        android:id="@+id/wworkout_btn"
+        android:id="@+id/logoutBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
