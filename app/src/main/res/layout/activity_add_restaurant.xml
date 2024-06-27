@@ -44,12 +44,26 @@
                 android:layout_marginTop="310dp"
                 android:layout_marginStart="30dp"
                 android:inputType="text"
+                android:hint="Resturant Name"
+                android:padding="15dp"
+                android:background="@drawable/box"
+                android:layout_marginEnd="30dp"
+                android:textColor="#7A7979"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="430dp"
+                android:layout_marginStart="30dp"
+                android:inputType="text"
                 android:padding="15dp"
                 android:background="@drawable/box"
                 android:layout_marginEnd="30dp"
                 android:textColor="#7A7979"
                 android:textStyle="bold"
-                android:text="Restaurant name"/>
+                android:hint="Restaurant Phone"/>
+
 
             <EditText
                 android:layout_width="match_parent"
@@ -61,12 +75,12 @@
                 android:layout_marginEnd="30dp"
                 android:textColor="#7A7979"
                 android:textStyle="bold"
-                android:text="Restaurant Address Link"/>
+                android:hint="Restaurant Address Link"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="430dp"
+                android:layout_marginTop="490dp"
                 android:layout_marginStart="30dp"
                 android:padding="15dp"
                 android:layout_marginEnd="30dp"
@@ -78,7 +92,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="490dp"
+                android:layout_marginTop="545dp"
                 android:layout_marginStart="30dp"
                 android:orientation="horizontal"
                 android:padding="15dp">
@@ -121,7 +135,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="580dp"
+                android:layout_marginTop="620dp"
                 android:layout_marginStart="30dp"
                 android:padding="15dp"
                 android:layout_marginEnd="30dp"
@@ -133,7 +147,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="650dp"
+                android:layout_marginTop="680dp"
                 android:layout_marginStart="30dp"
                 android:orientation="horizontal"
                 android:padding="15dp">
@@ -170,7 +184,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="720dp"
+                android:layout_marginTop="780dp"
                 android:layout_marginStart="30dp"
                 android:padding="15dp"
                 android:layout_marginEnd="30dp"

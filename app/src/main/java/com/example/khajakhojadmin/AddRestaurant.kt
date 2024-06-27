@@ -3,12 +3,14 @@ package com.example.khajakhojadmin
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class AddRestaurant : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_add_restaurant)
 
         val cuisineSpinner: Spinner = findViewById(R.id.cuisine_spinner)
