@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/chooseFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Choose File" />
+
+    <Button
+        android:id="@+id/uploadFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chooseFileButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Data" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/uploadFileButton"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

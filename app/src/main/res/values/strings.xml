@@ -14,7 +14,7 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="login">login</string>
     <string name="welcome_admin">Welcome Admin</string>
-    <string name="insert_resturant_logo">Insert Resturant Logo</string>
+    <string name="insert_restaurant_location">Insert Restaurant Location</string>
 
     <string-array name="cuisine_array">
         <item>American</item>
@@ -24,4 +24,6 @@
         <item>Nepali</item>
         <item>Thakali</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

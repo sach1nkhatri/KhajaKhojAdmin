@@ -33,13 +33,11 @@ class RestaurantAdapter(private var restaurantList: List<Restaurant>) :
 
     override fun onBindViewHolder(holder: RestaurantViewHolder, position: Int) {
         val restaurant = filteredRestaurantList[position]
-        holder.restaurantImage.setImageResource(restaurant.imageResId)
+//        holder.restaurantImage.setImageResource(restaurant.imageResId)
         holder.restaurantName.text = restaurant.name
-        holder.restaurantCuisine.text = restaurant.cuisine
-        holder.restaurantDistance.text = restaurant.distance
-        holder.restaurantTime.text = restaurant.time
+//        holder.restaurantCuisine.text = restaurant.cuisine
+//        holder.restaurantTime.text = restaurant.time
         holder.restaurantAddress.text = restaurant.address
-        holder.restaurantRating.text = restaurant.rating
     }
 
     override fun getItemCount() = filteredRestaurantList.size
@@ -54,7 +52,7 @@ class RestaurantAdapter(private var restaurantList: List<Restaurant>) :
                 } else {
                     restaurantList.filter {
                         it.name.lowercase(Locale.ROOT).contains(query) ||
-                                it.cuisine.lowercase(Locale.ROOT).contains(query) ||
+//                                it.cuisine.lowercase(Locale.ROOT).contains(query) ||
                                 it.address.lowercase(Locale.ROOT).contains(query)
                     }
                 }
