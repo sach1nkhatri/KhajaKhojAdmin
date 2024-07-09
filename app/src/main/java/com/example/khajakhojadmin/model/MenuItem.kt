@@ -1,4 +1,4 @@
-package com.example.khajakhojadmin.repository
+package com.example.khajakhojadmin.model
 
 data class MenuItem(
     val name: String,

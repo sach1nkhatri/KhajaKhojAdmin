@@ -17,7 +17,7 @@
         android:theme="@style/Theme.KhajaKhojAdmin"
         tools:targetApi="31">
         <activity
-            android:name=".repository.TestActivity"
+            android:name=".demo.TestActivity"
             android:exported="true">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
@@ -29,13 +29,13 @@
             android:name=".DeleteRestaurant"
             android:exported="false" />
         <activity
-            android:name=".AddCoupons"
+            android:name=".activity.AddCoupons"
             android:exported="false" />
         <activity
-            android:name=".AddAd"
+            android:name=".activity.AddAd"
             android:exported="false" />
         <activity
-            android:name=".AddRestaurant"
+            android:name=".activity.AddRestaurant"
             android:exported="true" />
         <activity
             android:name=".Dashboard"

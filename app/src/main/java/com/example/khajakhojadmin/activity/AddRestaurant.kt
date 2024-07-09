@@ -1,4 +1,4 @@
-package com.example.khajakhojadmin
+package com.example.khajakhojadmin.activity
 
 import android.app.TimePickerDialog
 import android.content.Intent
@@ -11,13 +11,13 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.example.khajakhojadmin.R
 import com.example.khajakhojadmin.databinding.ActivityAddRestaurantBinding
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.squareup.picasso.Picasso
 import org.json.JSONArray
-import org.json.JSONObject
 import java.io.BufferedReader
 import java.io.InputStreamReader
 

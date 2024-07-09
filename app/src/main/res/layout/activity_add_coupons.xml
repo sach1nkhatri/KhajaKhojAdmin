@@ -5,100 +5,104 @@
     android:id="@+id/coupons"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddCoupons">
+    tools:context=".activity.AddCoupons">
 
-   <TextView
-       android:id="@+id/textView3"
-       android:layout_width="match_parent"
+   <LinearLayout
+       android:layout_width="0dp"
        android:layout_height="wrap_content"
-       android:layout_marginTop="36dp"
-       android:gravity="center"
-       android:text="Add Coupons"
-       android:textColor="@color/RedKK"
-       android:textSize="25sp"
-       android:textStyle="bold"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent" />
+       android:orientation="vertical"
+       android:padding="16dp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:gravity="center_horizontal">
 
-   <EditText
-       android:id="@+id/editTextRestaurantName"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_margin="30dp"
-       android:layout_marginStart="30dp"
-       android:layout_marginTop="69dp"
-       android:layout_marginEnd="30dp"
-       android:background="@drawable/rounded_corner2"
-       android:hint="Restaurant Name"
-       android:padding="15dp"
-       android:textColorHint="@color/black"
-       android:textStyle="bold"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/textView3" />
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="Add Coupons"
+          android:textColor="@color/RedKK"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          android:layout_marginBottom="16dp"/>
 
-   <EditText
-       android:id="@+id/editTextOffer"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_margin="30dp"
-       android:layout_marginStart="30dp"
-       android:layout_marginTop="16dp"
-       android:layout_marginEnd="30dp"
-       android:background="@drawable/rounded_corner2"
-       android:hint="Enter Offer"
-       android:padding="15dp"
-       android:textColorHint="@color/black"
-       android:textStyle="bold"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/editTextRestaurantName" />
+      <EditText
+          android:id="@+id/restaurantName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/rounded_corner2"
+          android:hint="Restaurant Name"
+          android:padding="15dp"
+          android:textColorHint="@color/hint_color"
+          android:textStyle="bold"
+          android:layout_marginBottom="16dp"/>
 
-   <EditText
-       android:id="@+id/editTextPromoCode"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_margin="30dp"
-       android:layout_marginStart="30dp"
-       android:layout_marginTop="16dp"
-       android:layout_marginEnd="30dp"
-       android:background="@drawable/rounded_corner2"
-       android:hint="Enter Promo Code"
-       android:padding="15dp"
-       android:textColorHint="@color/black"
-       android:textStyle="bold"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/editTextOffer" />
+      <EditText
+          android:id="@+id/restaurantDiscountRate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/rounded_corner2"
+          android:hint="Discount Percentage"
+          android:padding="15dp"
+          android:textColorHint="@color/hint_color"
+          android:textStyle="bold"
+          android:layout_marginBottom="16dp"/>
 
-   <EditText
-       android:id="@+id/editTextDuration"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_margin="30dp"
-       android:layout_marginStart="30dp"
-       android:layout_marginTop="16dp"
-       android:layout_marginEnd="30dp"
-       android:background="@drawable/rounded_corner2"
-       android:hint="Enter Duration"
-       android:padding="15dp"
-       android:textColorHint="@color/black"
-       android:textStyle="bold"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/editTextPromoCode" />
+      <EditText
+          android:id="@+id/restaurantDiscountCode"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/rounded_corner2"
+          android:hint="Enter Promo Code"
+          android:padding="15dp"
+          android:textColorHint="@color/hint_color"
+          android:textStyle="bold"
+          android:layout_marginBottom="16dp"/>
 
-   <Button
-       android:id="@+id/buttonAddCoupon"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="16dp"
-       android:text="Add Coupon"
-       android:backgroundTint="@color/RedKK"
-       android:textColor="@color/white"
-       android:padding="10dp"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/editTextDuration" />
+      <EditText
+          android:id="@+id/restaurantMinimumOrder"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/rounded_corner2"
+          android:hint="Minimum Order"
+          android:padding="15dp"
+          android:textColorHint="@color/hint_color"
+          android:textStyle="bold"
+          android:layout_marginBottom="16dp"/>
+
+      <EditText
+          android:id="@+id/restaurantOutletAddress"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/rounded_corner2"
+          android:hint="Promo Code Active Outlet Address"
+          android:padding="15dp"
+          android:textColorHint="@color/hint_color"
+          android:textStyle="bold"
+          android:layout_marginBottom="16dp"/>
+
+      <EditText
+          android:id="@+id/restaurantDiscountCodeValidTo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/rounded_corner2"
+          android:hint="Valid To (YYYY-MM-DD)"
+          android:padding="15dp"
+          android:textColorHint="@color/hint_color"
+          android:textStyle="bold"
+          android:layout_marginBottom="16dp"/>
+
+      <Button
+          android:id="@+id/buttonAddCoupon"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:backgroundTint="@color/RedKK"
+          android:padding="10dp"
+          android:text="Add Coupon"
+          android:textColor="@color/white"/>
+
+   </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

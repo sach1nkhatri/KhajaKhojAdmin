@@ -1,4 +1,4 @@
-package com.example.khajakhojadmin.repository
+package com.example.khajakhojadmin.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.khajakhojadmin.R
+import com.example.khajakhojadmin.model.MenuItem
 
 class MenuAdapter(private val menuItems: List<MenuItem>) : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
 

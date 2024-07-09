@@ -5,4 +5,5 @@
     <color name="RedKK">#FF6060</color>
     <color name="RedKK2">#EC9696</color>
     <color name="cream">#F3EED9</color>
+    <color name="hint_color">#6D6B63</color>
 </resources>
