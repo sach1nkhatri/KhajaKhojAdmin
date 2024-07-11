@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.khajakhojadmin.activity.AddAd
 import com.example.khajakhojadmin.activity.AddCoupons
 import com.example.khajakhojadmin.activity.AddRestaurant
+import com.example.khajakhojadmin.activity.DeleteRestaurant
 
 class Dashboard : AppCompatActivity() {
 

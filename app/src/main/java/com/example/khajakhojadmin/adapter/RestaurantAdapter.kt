@@ -7,8 +7,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.khajakhojadmin.R
 import com.example.khajakhojadmin.model.Restaurant
+import com.google.firebase.database.FirebaseDatabase
 
-class RestaurantAdapter(private var restaurantList: List<Restaurant>) :
+class RestaurantAdapter(private var restaurantList: MutableList<Restaurant>) :
     RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantViewHolder {
@@ -25,8 +26,22 @@ class RestaurantAdapter(private var restaurantList: List<Restaurant>) :
         return restaurantList.size
     }
 
+    fun deleteRestaurant(position: Int) {
+        val restaurant = restaurantList[position]
+        restaurantList.removeAt(position)
+        notifyItemRemoved(position)
+        deleteRestaurantFromFirebase(restaurant.id)
+    }
+
+    private fun deleteRestaurantFromFirebase(id: String?) {
+        id?.let {
+            val database = FirebaseDatabase.getInstance().reference.child("restaurants").child(it)
+            database.removeValue()
+        }
+    }
+
     fun updateRestaurantList(newList: List<Restaurant>) {
-        restaurantList = newList
+        restaurantList = newList.toMutableList()
         notifyDataSetChanged()
     }
 
@@ -48,3 +63,4 @@ class RestaurantAdapter(private var restaurantList: List<Restaurant>) :
         }
     }
 }
+
