@@ -9,4 +9,6 @@ data class Coupon(
     val minimumOrderPrice: Int = 0,      // minimum order price.
     val validFrom: String = "",
     val validTo: String = "",
+
+    val couponKey: String = ""
 )
