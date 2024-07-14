@@ -38,13 +38,16 @@ class LoginPage : AppCompatActivity() {
             Log.i(TAG, "username: $username and Password : $password")
 
             // Check if both fields are not empty
-            if (username.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Please fill in both fields", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
+//            if (username.isEmpty() || password.isEmpty()) {
+//                Toast.makeText(this, "Please fill in both fields", Toast.LENGTH_SHORT).show()
+//                return@setOnClickListener
+//            }
             if (username.isNotEmpty() && password.isNotEmpty()) {
-                signInWithEmailAndPassword(username, password)
+//                signInWithEmailAndPassword(username, password)
             }
+            val intent = Intent(this, Dashboard::class.java) // Use appContext
+            startActivity(intent)
+            finish()
 
         }
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KhajaKhojAdmin</string>
+    <string name="app_name">Khaja-KhojAdmin</string>
     <string name="Password">Password</string>
     <string name="username_or_email">Username or Email</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
@@ -14,7 +14,20 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="login">login</string>
     <string name="welcome_admin">Welcome Admin</string>
-    <string name="insert_restaurant_location">Insert Restaurant Location</string>
+    <string name="insert_restaurant_location">Enter coordinates (lat,lon)</string>
+
+    <string name="select_image">Select Image</string>
+    <string name="image_selected">Image Selected</string>
+    <string name="select_required_images">Select Required Images (Max: %d)</string>
+    <string name="no_images_selected">No images selected</string>
+    <string name="select_images">Select Images</string>
+    <string name="image_url_stored">Image URL stored in Firebase</string>
+    <string name="image_urls_stored">Image URLs stored in Firebase</string>
+    <string name="error_reading_file">Error reading JSON file: %s</string>
+    <string name="menu_item_uploaded">Menu item uploaded successfully</string>
+    <string name="image_uploaded_successfully">Image uploaded successfully</string>
+    <string name="restaurant_added_successfully">Restaurant added successfully</string>
+
 
     <string-array name="cuisine_array">
         <item>American</item>
